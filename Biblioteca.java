@@ -10,9 +10,11 @@ public class Biblioteca {
     public void registrarLibro(Libro libro) {
         if (libros.contains(libro)) {
             System.out.println("El código del libro que se va a añadir ya se encuentra registrado");
+        }else{
+            libros.add(libro);
+            System.out.println("Libro registrado: " + libro.titulo);
         }
-        libros.add(libro);
-        System.out.println("Libro registrado: " + libro.titulo);
+        
     }
 
     // Registrar usuario
